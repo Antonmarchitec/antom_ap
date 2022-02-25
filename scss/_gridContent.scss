@@ -1,0 +1,70 @@
+@import "variables";
+body{
+    background: #1a1a1a;
+    //background: scroll;
+}
+html{
+    scroll-behavior:smooth;
+}
+.CONTENIDO_CONTENT{
+    width: 100%;
+    max-width: 1300px;
+    //padding: 5px 0px;
+    margin: auto;
+    background: #1a1a1a;
+    overflow: hidden;
+    display: grid;
+    //gap:1em;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 50px repeat(6,auto);
+    grid-template-areas:"MENU_CONTENT        MENU_CONTENT        MENU_CONTENT"
+                        "ABOUT_CONTENT       ABOUT_CONTENT       ABOUT_CONTENT"
+                        "PORTFOLIO_CONTENT   PORTFOLIO_CONTENT   PORTFOLIO_CONTENT"
+                        "SERVICES_CONTENT    SERVICES_CONTENT    SERVICES_CONTENT"
+                        "SKILLS_CONTENT      SKILLS_CONTENT      SKILLS_CONTENT"
+                        "PLANES              PLANES              PLANES"
+                        "CONTACT_CONTENT     CONTACT_CONTENT     CONTACT_CONTENT"
+                        "PIE_CONTENT         PIE_CONTENT         PIE_CONTENT";
+                        .MENU_CONTENT{
+                            //padding: 5px 0px;
+                            //background: rgb(0, 15, 100);
+                            grid-area: MENU_CONTENT;
+                            
+                        }
+                        .ABOUT_CONTENT{
+                            //padding: 5px 0px;
+                            //background: $colorBlack;
+                            grid-area: ABOUT_CONTENT;
+                            
+                        }
+                        .PORTFOLIO_CONTENT{
+                            //padding: 5px 0px;
+                            //background: $colorBlack;
+                            grid-area: PORTFOLIO_CONTENT;
+                        }
+                        .SERVICES_CONTENT{
+                            //padding: 5px 0px;
+                            //background: rgb(70, 70, 70);
+                            grid-area: SERVICES_CONTENT;
+                        }
+                        .SKILLS_CONTENT{
+                            //padding: 5px 0px;
+                            //background: rgb(70, 70, 70);
+                            grid-area: SKILLS_CONTENT;
+                        }
+                        .PLANES{
+                            //padding: 5px 0px;
+                            //background: rgb(70, 70, 70);
+                            grid-area: PLANES;
+                        }
+                        .CONTACT_CONTENT{
+                            //padding: 5px 0px;
+                            //background: rgb(70, 70, 70);
+                            grid-area: CONTACT_CONTENT;
+                        }
+                        .PIE_CONTENT{
+                            //padding: 5px 0px;
+                            //background: rgb(70, 70, 70);
+                            grid-area: PIE_CONTENT;
+                        }
+}

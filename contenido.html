@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>portfolioContent</title>
+</head>
+<body>
+      <div class="CONTENIDO_CONTENT">
+        <!--PRELOADER DE LA PAGINA STAR-->
+        <div class="loader" id="loader">
+          <img src="img/rodaje.gif" class="rodaje">
+          <p style="color: #56fbd3;">Cargando portafolio...</p>
+        </div>
+        <!--PRELOADER DE LA PAGINA END-->
+
+
+
+        <div class="MENU_CONTENT" id="menu">
+            <header class="header" id="contHeader">
+                <div class="header_logo">
+                  <img src="img/LOGO/loogo.png" alt="logo" width="100%" height="100%" class="logo">
+                </div>
+                
+
+                <div class="contNavegador" id="contNavegador">
+
+                    <!--ICONO INICIO-->
+                    <a href="index.html" style="text-decoration: none;">
+                      <div class="contIcono_active">
+                        <i class="IconNombre fas fa-cogs"></i>
+                        <h2 class="contLetras">
+                          Inicio
+                        </h2>
+                      </div>
+                    </a>
+                  
+
+                     <!--ICONO ACERCA-->
+                     <a href="#acerca" style="text-decoration: none;">
+                      <div class="contIcono">
+                        <i class="IconNombre fas fa-users-cog"></i>
+                        <h2 class="contLetras">
+                          Acerca
+                        </h2>
+                      </div>
+                     </a>
+                  
+
+                      <!--ICONO PORTAFOLIO-->
+                      <a href="#portafolio" style="text-decoration: none;">
+                        <div class="contIcono">
+                          <i class="IconNombre fas fa-address-card"></i>
+                          <h2 class="contLetras">
+                            Portafolio
+                          </h2>
+                        </div>
+                      </a>
+                
+
+                     <!--ICONO SERVICIOS-->
+                     <a href="#servicios" style="text-decoration: none;">
+                      <div class="contIcono">
+                        <i class="IconNombre fas fa-chalkboard-teacher"></i>
+                        <h2 class="contLetras">
+                          Servicios
+                        </h2>
+                      </div>
+                     </a>
+                 
+ 
+                     <!--ICONO HABILIDADES-->
+                     <a href="#habilidades" style="text-decoration: none;">
+                      <div class="contIcono">
+                        <i class="IconNombre fab fa-centos"></i>
+                        <h2 class="contLetras">
+                          Habilidades
+                        </h2>
+                      </div>
+                     </a>
+                
+         
+                     <!--ICONO CONTACTO-->
+                     <a href="#contacto" style="text-decoration: none;">
+                      <div class="contIcono">
+                        <i class="IconNombre fas fa-book-reader"></i>
+                        <h2 class="contLetras">
+                          Contacto
+                        </h2>
+                      </div>
+                     </a>
+                
+                </div>
+          
+          
+                <div class="header_btnResponsive" id="btnResponsive">
+                  <button class="hamburger hamburger--emphatic" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>   
+                </div>
+            </header>
+        </div>
+
+
+
+        <div class="ABOUT_CONTENT" id="acerca">
+              <div id="cont_descripcion_foto">
+                <div class="contBase">
+                  <div class="contenedor_izq">
+                    <h2 class="titulo_acerca
+                    animate__animated animate__fadeIn" style="animation-duration: 2s;" >¡Quien soy!</h2>
+                  
+                    <p class="descripcion_acerca
+                    wow animate__animated animate__fadeIn" style="animation-duration: 5s;">
+                    Hola, mi nombre es Antonio Ponce y soy un emprendedor freelancer con formación en Ing. De Sistemas, amante del mundo digital, actualmente estoy incursionando en el diseño y desarrollo web FrontEnd y mi principal meta es ser un desarrollador Full Stack. 
+                    <br><br>
+                    Mi trabajo está dirigido al desarrollo de interfaces web aplicando distintas tecnologías.
+                    Puedes contáctarme dando un click en el botón o puedes enviarme un 
+                    mensaje llenando el <a href="#basecontacto" class="formms">formulario de contacto!  
+                      </a> 
+                    </p>
+
+                    <a href="https://wa.me/+59170856061?text=Hola%20necesito%20información" target="_blank">
+                      <button class="btnAcerca
+                      wow animate__animated animate__fadeIn" style="animation-duration: 7s;">Contacto <i class="iconAB fab fa-whatsapp-square"></i></button>
+                    </a>   
+                  </div>
+        
+                  <div class="contenedor_der">
+                    <div class="foto 
+                    wow animate__animated animate__fadeIn" style="animation-duration: 5s;">
+                    
+                      <!--imagen-->
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0c1b32" fill-opacity="1" d="M0,224L0,160L36.9,160L36.9,224L73.8,224L73.8,32L110.8,32L110.8,224L147.7,224L147.7,288L184.6,288L184.6,192L221.5,192L221.5,64L258.5,64L258.5,224L295.4,224L295.4,64L332.3,64L332.3,160L369.2,160L369.2,96L406.2,96L406.2,160L443.1,160L443.1,288L480,288L480,224L516.9,224L516.9,192L553.8,192L553.8,288L590.8,288L590.8,128L627.7,128L627.7,96L664.6,96L664.6,288L701.5,288L701.5,64L738.5,64L738.5,224L775.4,224L775.4,128L812.3,128L812.3,32L849.2,32L849.2,0L886.2,0L886.2,64L923.1,64L923.1,32L960,32L960,320L996.9,320L996.9,224L1033.8,224L1033.8,320L1070.8,320L1070.8,96L1107.7,96L1107.7,256L1144.6,256L1144.6,160L1181.5,160L1181.5,64L1218.5,64L1218.5,64L1255.4,64L1255.4,320L1292.3,320L1292.3,160L1329.2,160L1329.2,96L1366.2,96L1366.2,32L1403.1,32L1403.1,128L1440,128L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z"></path>
+              </svg>
+        </div>
+
+
+
+        <div class="PORTFOLIO_CONTENT" id="portafolio">
+          <div class="contCuadrosBase">
+            <h2 class="titleProyects">PORTAFOLIO</h2>
+            <div class="contPrincipalCajas">
+              <!--CAJA IZQUIERDA DETALLE START-->
+              <div class="ContCajaDetalle"> 
+                
+                  <h2 class="conoscamos__tech">Conozcamos las tecnologías web</h2><br>
+                  <p class="conoscamos__desc">
+                    <b class="titleP"> HTML (HyperText Markup Language): </b> Es un lenguaje de marcado que  nos ayudará a estructurar todo nuestro sitio web.
+                    <br><br>
+                    <b class="titleP"> CSS (cascading style sheets): </b> Con CSS podremos maquetar, darle forma, posicionar, ponerle colores, sombreados, luces y darle estilos como queramos a nuestro sitio web.
+                    <br><br>
+                    <b class="titleP"> JavaScript (JS): </b> Es un lenguaje de programación que nos permitirá darle funcionalidad dinámica a nuestro sitio como desplazar, ocultar, mostrar elementos en cuanto se ejecute una acción.
+                    <br><br>
+                    <b class="titleP"> React JS: </b> React JS es una biblioteca de JavaScript de codigo abierto, es mantenida por desarrolladores de Facebook y es utilizada para crear interfaces de usuario.
+                  </p>
+                  <br>
+                  <p class="pieTexto">
+                    Existen muchas tecnologías, Frameworks y librerías en el mundo del desarrollo web, en este caso solo menciono algunas.
+                  </p>
+                
+                     
+                  <a href="retos.html">
+                    <button class="VerProyecto"> 
+                      <!-- <b>¡ RETOS FRONTEND !</b> -->
+                      
+                      <div class="icono">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                      </div>
+                      <span class="spahh">Retos FrontEnd</span>
+                    </button>
+                  </a>
+              </div>
+              <!--CAJA IZQUIERDA DETALLE END-->
+
+              <!--CAJA DERECHA FOTOS START-->
+              <div class="ContCajaFotos
+              wow animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+                <div class="cuadroFoto1">
+                  <div class="cuadroFoto1_opacity">
+                    <h2 class="title">¡VETERINARIA<br>VIP!</h2>
+                    <div class="contIndicador">
+                      <i class="iconIndicador fas fa-reply-all" id="iconIndicador"></i>
+                    </div>
+                    <div class="contRepositorios" id="contRepositorios">
+                      <a href="#" target="_blank"><i class="iconGit fab fa-github-square" ><span class="text"> GitHub</span></i></a>
+                      <a href="https://antonmarchitec.github.io/veterinaria_vip/" target="_blank"><i class="iconGit fas fa-eye"><span class="text"> Ver</span></i></a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="cuadroFoto2">
+                  <div class="cuadroFoto2_opacity">
+                    <h2 class="title">¡CALCULADORA<br>INDEMNIZACIÓN!</h2>
+                    <div class="contIndicador2">
+                      <i class="iconIndicador2 fas fa-reply-all" id="iconIndicador2"></i>
+                    </div>
+                    <div class="contRepositorios2" id="contRepositorios2">
+                      <a href="#" target="_blank"><i class="iconGit2 fab fa-github-square"><span class="text2"> GitHub</span></i></a>
+                      <a href="https://antonmarchitec.github.io/calculadora_indemnizacion/" target="_blank"><i class="iconGit2 fas fa-eye"><span class="text2"> Ver</span></i></a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="cuadroFoto3">
+                  <div class="cuadroFoto3_opacity">
+                    <h2 class="title">¡Ver proyecto!</h2>
+                    <div class="contIndicador3">
+                      <i class="iconIndicador3 fas fa-reply-all" id="iconIndicador3"></i>
+                    </div>
+                    <div class="contRepositorios3" id="contRepositorios3">
+                      <a href="" target="_blank"><i class="iconGit3 fab fa-github-square"><span class="text3"> GitHub</span></i></a>
+                      <a href="" target="_blank"><i class="iconGit3 fas fa-eye"><span class="text3"> Ver</span></i></a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="cuadroFoto4">
+                  <div class="cuadroFoto4_opacity">
+                    <h2 class="title">¡Ver proyecto!</h2>
+                    <div class="contIndicador4">
+                      <i class="iconIndicador4 fas fa-reply-all" id="iconIndicador4"></i>
+                    </div>
+                    <div class="contRepositorios4" id="contRepositorios4">
+                      <a href="" target="_blank"><i class="iconGit4 fab fa-github-square"><span class="text4"> GitHub</span></i></a>
+                      <a href="" target="_blank"><i class="iconGit4 fas fa-eye"><span class="text4"> Ver</span></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--CAJA DERECHA FOTOS END-->
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="SERVICES_CONTENT" id="servicios"> 
+          <div id="contBase">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path fill="#1a1a1a" fill-opacity="1" d="M0,64L0,96L40,96L40,96L80,96L80,64L120,64L120,256L160,256L160,160L200,160L200,256L240,256L240,224L280,224L280,64L320,64L320,192L360,192L360,320L400,320L400,96L440,96L440,96L480,96L480,96L520,96L520,224L560,224L560,288L600,288L600,256L640,256L640,64L680,64L680,256L720,256L720,288L760,288L760,224L800,224L800,128L840,128L840,64L880,64L880,288L920,288L920,128L960,128L960,64L1000,64L1000,0L1040,0L1040,32L1080,32L1080,192L1120,192L1120,256L1160,256L1160,224L1200,224L1200,224L1240,224L1240,160L1280,160L1280,256L1320,256L1320,32L1360,32L1360,64L1400,64L1400,160L1440,160L1440,0L1400,0L1400,0L1360,0L1360,0L1320,0L1320,0L1280,0L1280,0L1240,0L1240,0L1200,0L1200,0L1160,0L1160,0L1120,0L1120,0L1080,0L1080,0L1040,0L1040,0L1000,0L1000,0L960,0L960,0L920,0L920,0L880,0L880,0L840,0L840,0L800,0L800,0L760,0L760,0L720,0L720,0L680,0L680,0L640,0L640,0L600,0L600,0L560,0L560,0L520,0L520,0L480,0L480,0L440,0L440,0L400,0L400,0L360,0L360,0L320,0L320,0L280,0L280,0L240,0L240,0L200,0L200,0L160,0L160,0L120,0L120,0L80,0L80,0L40,0L40,0L0,0L0,0Z"></path>
+            </svg>
+
+            <h2 class="contBaseTitle">SERVICIOS</h2> 
+
+            <div class="containerBaseCuadros">
+               <!--------------PRIMER CUADRO---------------------->
+              <div class="contCuadro
+              wow animate__animated animate__fadeIn" style="animation-duration: 3s;">
+                <div class="contCuadro_imagen">
+
+                </div>
+                <div class="contCuadro_descripcion">
+                  <h2 class="contCuadro_title">CREACIÓN  DE <br>SITIOS WEB </h2>
+                  <p class="contCuadro_parrafo">
+                    Diseño de sitios web totalmente personalizados y 
+                    adaptados a cualquier dispositivo móvil.           
+                  </p>
+                  <a href="planes.html"><button class="btnPlanes"> Ver planes</button></a>
+                </div> 
+              </div>
+
+              <!--------------SEGUNDO CUADRO---------------------->
+              <div class="contCuadro
+              wow animate__animated animate__fadeIn" style="animation-duration: 3s;">
+                <div class="contCuadro_imagen2">
+
+                </div>
+                <div class="contCuadro_descripcion">
+                  <h2 class="contCuadro_title">TIENDA ONLINE<br>ECOMMERCE</h2>
+                  <p class="contCuadro_parrafo">
+                    Entra en el mundo digital y empieza a vender 
+                    tus productos y servicios por internet a travez de 
+                    tu sitio web!       
+                  </p>
+                </div> 
+              </div>
+              
+              <!--------------TERCER CUADRO---------------------->
+              <div class="contCuadro
+              wow animate__animated animate__fadeIn" style="animation-duration: 3s;">
+                <div class="contCuadro_imagen3">
+
+                </div>
+                <div class="contCuadro_descripcion">
+                  <h2 class="contCuadro_title">ASISTENCIA<br>TÉCNICA</h2>
+                  <p class="contCuadro_parrafo">
+                    <i class="iconAste fas fa-chevron-right"></i> Instalación de programas.<br>
+                    <i class="iconAste fas fa-chevron-right"></i> Formateo.<br>
+                    <i class="iconAste fas fa-chevron-right"></i> Eliminación de virus.<br>
+                    <i class="iconAste fas fa-chevron-right"></i> Instalación de programas<br>
+                    <i class="iconAste fas fa-chevron-right"></i> Soporte en general.<br>         
+                  </p>
+                </div> 
+              </div>             
+              
+
+              <!--------------CUARTO CUADRO---------------------->
+              <div class="contCuadro
+              wow animate__animated animate__fadeIn" style="animation-duration: 3s;">
+                <div class="contCuadro_imagen4">
+
+                </div>
+                <div class="contCuadro_descripcion">
+                  <h2 class="contCuadro_title">DISEÑO <br>GRÁFICO</h2>
+                  <p class="contCuadro_parrafo">
+                    Personalización de logotipos y artes publicitarios para tu negocio o emprendimiento.              
+                  </p>
+                </div> 
+              </div>              
+      
+            </div>
+          </div>
+        </div>
+
+
+        <div class="SKILLS_CONTENT" id="habilidades">
+          <div class="contImgBig">
+            <div class="cont_big">
+              <!--<h2 class="hh">HABILIDADES</h2>-->
+               
+            
+              <!--CONTENEDOR DE LOS SKILLS-->
+              <div class="cont_cont_cuadros">
+              
+                <div class="cont_cuadro_A">
+                  <div class="title_tech">
+                     <h2 class="title">HABILIDADES</h2>
+                  </div>
+
+                  <div class="tecnologis">
+                      <!--CUADRO TECNOLOGIA 1-->
+                      <div class="contcuadro 
+                      wow animate__animated animate__flipInX" style="animation-duration: 4s;" id="HTML">
+                        <div class="mi_imagen">
+                          <img src="img/TECNOLOGIAS/HTML5.png" alt="" width="100%" height="100%">
+                        </div> 
+                        <div class="campoText">HTML5</div>
+                        <div class="campoSup">
+
+                        </div>
+                      </div>
+
+
+                        <!--CUADRO TECNOLOGIA 2-->
+                      <div class="contcuadro 
+                        wow animate__animated animate__flipInX" style="animation-duration: 4s;" id="CSSDF">
+                          <div class="mi_imagen">
+                            <img src="img/TECNOLOGIAS/CSS3.png" alt="" width="100%" height="100%">
+                          </div> 
+                          <div class="campoText">CSS3</div>
+                        
+                      </div>
+
+
+                        <!--CUADRO TECNOLOGIA 3-->
+                      <div class="contcuadro 
+                        wow animate__animated animate__flipInX" style="animation-duration: 4s;" id="skillJAVASCRIPT">
+                          <div class="mi_imagen">
+                            <img src="img/TECNOLOGIAS/JAVASCRIPT.png" alt="" width="100%" height="100%">
+                          </div>
+                          <div class="campoText">JavaScript</div> 
+                      </div>
+
+
+                        <!--CUADRO TECNOLOGIA 4-->
+                      <div class="contcuadro 
+                        wow animate__animated animate__flipInX" style="animation-duration: 4s;" id="skillSASS">
+                          <div class="mi_imagen">
+                            <img src="img/TECNOLOGIAS/SASS.png" alt="" width="100%" height="100%">
+                          </div>
+                          <div class="campoText">SASS</div> 
+                      </div>
+
+
+
+                        <!--CUADRO TECNOLOGIA 5-->
+                      <div class="contcuadro 
+                        wow animate__animated animate__flipInX" style="animation-duration: 4s;" id="skillBOOTSTRAP">
+                          <div class="mi_imagen">
+                            <img src="img/TECNOLOGIAS/BOOTSTRAP.png" alt="" width="100%" height="100%">
+                          </div>
+                          <div class="campoText">Bootstrap</div> 
+                      </div>
+
+
+                        <!--CUADRO TECNOLOGIA 6-->
+                      <div class="contcuadro 
+                        wow animate__animated animate__flipInX" style="animation-duration: 4s;" id="skillGIT">
+                          <div class="mi_imagen">
+                            <img src="img/TECNOLOGIAS/GIT.png" alt="" width="100%" height="100%">
+                          </div> 
+                          <div class="campoText">Git</div>
+                      </div>
+
+
+                        <!--CUADRO TECNOLOGIA 7-->
+                      <div class="contcuadro 
+                        wow animate__animated animate__flipInX" style="animation-duration: 4s;" id="skillGITHUB">
+                          <div class="mi_imagen">
+                            <img src="img/TECNOLOGIAS/GITHUB.png" alt="" width="100%" height="100%">
+                          </div>
+                          <div class="campoText">GitHub</div> 
+                      </div>
+
+                        <!--CUADRO TECNOLOGIA 8-->
+                      
+                        <div class="contcuadro wow animate__animated animate__flipInX" style="animation-duration: 2s;">
+                          <div class="mi_imagen">
+                            <img src="img/TECNOLOGIAS/REACT.png" alt="" width="100%" height="100%">
+                          </div>
+                          <div class="campoText">React JS</div>   
+                        </div>
+                        
+
+                        <!--CUADRO TECNOLOGIA 9-->
+                      <div class="contcuadro 
+                        wow animate__animated animate__flipInX" style="animation-duration: 5s;" id="skillWORDPRESS">
+                          <div class="mi_imagen">
+                            <img src="img/TECNOLOGIAS/WORDPRESS.png" alt="" width="100%" height="100%">
+                          </div>
+                          <div class="campoText">Wordpress</div> 
+                      </div>
+
+                        <!--CUADRO TECNOLOGIA 10-->
+
+                      <div class="contcuadro 
+                        wow animate__animated animate__flipInX" style="animation-duration: 5s;" id="skillPHOTOSHOP">
+                          <div class="mi_imagen">
+                            <img src="img/TECNOLOGIAS/PHOTOSHOP.png" alt="" width="100%" height="100%">
+                          </div>
+                          <div class="campoText">Photoshop</div> 
+                      </div>
+                  </div>  
+                </div>
+
+
+                <div class="cont_cuadro_B">
+                  <h2 class="title" id="titleRetos">OTRAS PÁGINAS </h2>
+                  <div class="contBaase">
+                    <a href="https://www.facebook.com/Digitizing-102974211681718" target="_blank"><div class="contBaase__caja__A"></div></a>
+                    <a href="https://www.facebook.com/ANTOM-GAME-101778548320899" target="_blank"><div class="contBaase__caja__B"></div></a>
+                    
+                  </div> 
+                </div>
+              </div>
+               
+            </div>   
+          </div>         
+        </div>
+
+   
+        <div class="CONTACT_CONTENT" id="contacto">
+          <div class="contContact" id="basecontacto">
+            <form action="enviar.php" method="Post" class="formulario"  onsubmit="return validar();"> <!--c-->
+             <h1 class="title">FORMULARIO DE CONTACTO</h1>
+             <div class="contDatosPersonales">
+                  <div class="contCampos">
+                    <h2 class="contCamposTitle">Datos personales.</h2>
+                    <div class="campoNombre">
+                      <input type="text" name="nombre" placeholder="Nombre" class="input" id="nombre">
+                    </div>
+        
+                    <div class="campoCorreo">
+                      <input type="text" name="email" placeholder="Correo electronico" class="input" id="correo">
+                    </div>
+        
+                    <div class="campoCelular">
+                      <input type="text" name="celular" placeholder="Celular" class="input" id="celular">
+                    </div>
+                  </div>
+
+                  <div class="campoTextarea">
+                    <h2 class="campoTextareaTitle">Escribe un comentario. </h2> 
+                    <textarea  id="miText"  name="comentario" placeholder="Coloca una descripcion...">
+                        
+                    </textarea>
+                  </div>     
+             </div>
+             <button type="submit" class="btnEnviar" onclick="validar()">Enviar</button> 
+            </form>
+          </div>     
+        </div> 
+
+
+        <div class="contBtnTop" >
+          <a href="#menu"><i class="iconTop fas fa-caret-square-up" id="iconTop"></i></a>
+        </div>
+
+        
+
+        <div class="PIE_CONTENT">
+          <div class="contPie">
+             <div class="boxing1">     
+             </div>
+
+             <div class="boxing2">
+              <h2 class="contFooter_derechos_text">
+                Derechos reservados <br> <span class="ap"> || www.antomdeveloper.com</span>
+              </h2>
+             </div>
+
+             <div class="boxing3">
+               <div class="pieRedes">
+                <a href="https://www.facebook.com/Digitizing-102974211681718" target="_blank"><i class="IconRed fab fa-facebook-square"></i></a>
+               </div>
+
+
+               <div class="pieRedes">
+                <a href="https://www.instagram.com/antom_ap/" target="_blank"><i class="IconRed fab fa-instagram-square"></i></a>
+               </div>
+
+
+               <div class="pieRedes">
+                <a href="https://linkedin.com/in/antonio-dennis-ponce-salazar-255243225"><i class="IconRed fab fa-linkedin" target="_blank"></i></a>
+               </div>
+
+
+               <div class="pieRedes">
+                <a href="https://twitter.com/AntonioDennisP1" target="_blank"><i class="IconRed fab fa-twitter-square"></i></a>
+               </div>
+               
+
+               <div class="pieRedes">
+                <a href="https://www.youtube.com/channel/UCZtTDiJ1y1lGsi5i3C_s3Qw" target="_blank"><i class="IconRed fab fa-youtube"></i></a>
+               </div>
+             </div>
+
+
+          </div>
+        </div>
+      </div>  
+  
+        
+        
+      
+    
+    <script src="mis_scripts/menu.js"></script>
+    <script src="mis_scripts/btnTop.js"></script>
+    <script src="mis_scripts/proyectos.js"></script>
+    <script src="mis_scripts/validarForm.js"></script>
+    <script src="mis_scripts/galeria_mentor.js"></script>
+
+     <!--SCRIPT DE EFECTO PRELOADER-->
+     <script src="mis_scripts/preloader.js"></script>
+
+    <!--SCRIPT DE ANIMATION EL SCROLLING-->
+    <script src="mis_scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!--SCRIPT DE BTN HAMBURGUESA-->
+    <script src="mis_scripts/hamburguesa.js"></script>
+    
+    <!--SCRIPT DE SWITCH ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

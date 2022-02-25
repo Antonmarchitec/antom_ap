@@ -1,0 +1,208 @@
+@import "variables";
+#cont_descripcion_foto{
+    width: 100%;
+    //padding:5px 0px;
+    background-image: url(../img/desarrollando.jpg);
+    background-size:100% 500px;
+    background-repeat:no-repeat ;
+    .contBase{
+        width: 100%;
+        //padding: 5px 0px;
+        background:$colorAzulTransparente;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        //align-items: center;
+        .contenedor_izq{
+            width: 570px;
+            //margin-left: 20px;
+            padding:0px 20px;
+            //background: yellow;
+            .titulo_acerca{
+                margin-top: 30px    ;
+                font-size: 70px;
+                color: $colorVerde ;    
+            }
+            .descripcion_acerca{
+                margin-top: 20px;
+                text-align: justify;
+                color: #77829e;
+                .formms{
+                    color: $colorVerde;
+                }    
+            }
+            .btnAcerca{
+                
+                border:2px solid $colorVerde;
+                padding: 5px 50px;
+                background: $colorAzulTransparente;
+                color: white;
+                border-radius: 10px;
+                position: relative;
+                top: 30px;
+                transition-duration: 0.1s;
+                transition-timing-function: ease;
+                cursor: pointer;
+                .iconAB{
+                    font-size: 18px;
+                }
+            }
+            .btnAcerca:hover{
+                background:rgba(255, 255, 255, 0.075);
+                border: 2px solid $colorVerde;
+                //color: $colorBlack;
+            }
+            
+        }
+        .contenedor_der{
+            width: 600px;
+            background: $colorAzul;
+            padding: 50px 0px; 
+            .foto{
+                width: 300px;
+                height: 300px;
+                background-image: url(../img/foto.jpg);
+                background-size: 100% 100%; 
+                margin:auto;
+                border:2px solid $colorVerde;
+                border-radius:50%;
+                box-shadow: 0px 0px 5px $colorVerde;
+                transition: 0.1s all linear;
+            }
+            .foto:hover{
+                //border:5px double $colorVerde;
+                border: none;
+                box-shadow: 0px 0px 100px $colorVerdeTrans;
+            } 
+        } 
+    }
+   
+}
+
+
+@media (min-width:1025px) and (max-width:1200px){
+    #cont_descripcion_foto{
+        //background: green;
+        padding:0px;
+        .contBase{
+            //background: green;
+            .contenedor_izq{
+                width: 50%;
+                //background:gold;
+            }
+            .contenedor_der{
+                width: 50%;
+             
+            }
+        }
+
+    }
+}
+
+
+
+@media (min-width:770px) and (max-width:1024px){
+    #cont_descripcion_foto{
+        //background: green;
+        padding:0px;
+        .contBase{
+            //background: rgb(128, 51, 0);
+            .contenedor_izq{
+                width: 50%;
+                //background:gold;
+                .btnAcerca{
+                    width: 100%;
+                }
+            }
+            .contenedor_der{
+                width: 50%;
+             
+            }
+        }
+
+    }
+}
+
+
+@media (min-width:641px) and (max-width:769px){
+    #cont_descripcion_foto{
+        //background: green;
+        padding:0px;
+        .contBase{
+            //background: rgb(128, 51, 0);
+            .contenedor_izq{
+                width: 100%;
+                //background:gold;
+                .btnAcerca{
+                    width: 100%;
+                }
+            }
+            .contenedor_der{
+                margin-top: 40px;
+                //background: darkcyan;
+                width: 100%;
+             
+            }
+        }
+
+    }
+}
+
+
+@media (min-width:481px) and (max-width:640px){
+    #cont_descripcion_foto{
+        //background: green;
+        padding:0px;
+        .contBase{
+            //background: rgb(128, 51, 0);
+            .contenedor_izq{
+                width: 100%;
+                //background:gold;
+                .btnAcerca{
+                    width: 100%;
+                }
+            }
+            .contenedor_der{
+                margin-top: 40px;
+                //background: darkcyan;
+                width: 100%;
+             
+            }
+        }
+
+    }
+}
+
+@media (min-width:20px) and (max-width:480px){
+    #cont_descripcion_foto{
+        //background: green;
+        padding:0px;
+        .contBase{
+            //background: rgb(128, 51, 0);
+            .contenedor_izq{
+                width: 100%;
+                //background:gold;
+                .titulo_acerca{
+                    font-size: 55px;
+                }
+                .btnAcerca{
+                    width: 100%;
+                }
+            }
+            .contenedor_der{
+                margin-top: 40px;
+                //background: darkcyan;
+                width: 100%;
+             
+            }
+        }
+
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+@import "variables";
+.contPlanes{
+    width: 100%;    
+    padding: 50px 0px;
+    background: $colorAzul;
+    .contPlanesTitle{
+        text-align: center;
+        color: $colorVerde;
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .contPlanesBase{
+        width: 100%;
+        padding: 20px 0px;
+        //background: chocolate;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around ;
+        align-items: center;
+        .contPlanesCaja{
+            width: 330px;
+            height: 430px;
+            padding: 30px 0px;
+            margin-top: 10px;
+            background:$colorAzulTransparente;
+            border: 2px solid $colorVerde;
+            box-shadow: 0px -2px 10px $colorCelesteOscuro;
+            border-radius:10px 5px 10px 5px;
+            transition-property: transform;
+            position: relative;
+            .contPlanesCajaTitle{
+                text-align: center;
+                color: $colorVerde;   
+            }
+            .contPlanesCajaPrecio{
+                text-align: center;
+                color: $colorCelesteOscuro;
+                font-style: italic; 
+                border:1px solid $colorVerde;  
+                opacity: 0.8; 
+            }
+            .contPlanesCajaPrecioBs{
+                margin-top: -10px;
+                text-align: center;
+                color: $colorCelesteOscuro;
+                font-style: italic;  
+                margin-left: 50px;  
+                border:1px solid $colorVerde;
+            }
+            .contPlanesCajaDetalle{
+                margin-top: 20px;
+                margin-left: 30px;
+                //text-align: center;
+                .iconDetalle{
+                    color: $colorVerde;
+                    .iconTexto{
+                        color: white;
+                    }
+                }
+                
+            }
+            .iconVerr{
+                position: absolute;
+                bottom:20px;
+                right: 20px; 
+                color: $colorVerde;
+                .itext{
+                    color: $colorCelesteOscuro;
+                }
+            }
+        }
+        .contPlanesCaja:hover{
+            transform: scale(1.01,1.01);
+            border: 2px solid white;
+        }
+        @media only screen and (max-width:640px) {
+           .contPlanesCaja{
+               width: calc(50% - 40px);
+           }
+        }
+        @media only screen and (max-width:480px) {
+            .contPlanesCaja{
+                width: 80%;
+            }
+         }
+    }
+    
+    .cajaPlan{
+        width: 85%;
+        padding: 30px 40px;
+        border: 2px solid $colorVerde;
+        margin: 50px auto;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px $colorCelesteOscuro;
+        .planTitle{
+            color:$colorVerde;
+            font-size: 35px;
+        }
+        .planText{
+            color: $colorCelesteOscuro;
+        }
+    }
+    @media only screen and (max-width:720px){
+       .cajaPlan{
+           width: 100%;
+           border:none;
+           border-radius: 0;
+           box-shadow: 0px 0px 0px $colorAzul;  
+       }
+    }
+    .descripcion{
+        margin-top: -30px;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        color: $colorVerde;
+    }
+    .iconAtras{
+        color: $colorVerde;
+        margin-top: 20px;
+        margin-left: 50px;
+        transition: 0.2s all;
+        font-size: 20px;
+        .prev{
+            color: $colorCelesteOscuro;
+            font-size: 18px;
+        }
+    }
+    .iconAtras:hover{
+        transform: translateX(-10px);
+    }
+}

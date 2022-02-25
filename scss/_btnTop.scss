@@ -1,0 +1,51 @@
+//ESTILOS DEL BOTON TOP
+.contBtnTop{
+    //background: orange;
+    position: fixed;
+    right:40px;
+    bottom: 60px;
+    .iconTop{
+        font-size: 40px;
+        color: $colorBlanco;
+        opacity: 0;
+        transition: 0.5s all;
+        transform: scale(0,0);
+    }
+    .iconTopJS{
+        opacity: 1;
+        transform: scale(0.8,0.8);
+        cursor: pointer;
+        z-index: 1000;
+        transform: scale(1,1);
+    } 
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:720px) {
+    .contBtnTop{
+        //background: orange;
+        position: fixed;
+        right:20px;
+        bottom: 60px;
+        .iconTop{
+            font-size: 35px;
+            color: $colorBlanco;
+            opacity: 0;
+            transition: 0.5s all;
+            transform: scale(0,0);
+        }
+        .iconTopJS{
+            opacity: 1;
+            transform: scale(0.8,0.8);
+            cursor: pointer;
+            z-index: 1000;
+            transform: scale(1,1);
+        } 
+    }
+}

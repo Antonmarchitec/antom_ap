@@ -1,0 +1,648 @@
+@import "variables";
+.contCuadrosBase{
+    margin-top: 100px;
+    width: 100%;
+    padding: 5px 0px;
+    background: #1a1a1a;
+    .titleProyects{
+        text-align: center;
+        color: $colorVerde;
+        font-size: 50px;    
+        line-height: 55px;
+    }
+    
+    .contPrincipalCajas{
+        width: 100%;
+        padding: 5px 0px;
+        margin-top: 30px;
+        //background: rgba(31, 193, 199, 0.568);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        //CONTENEDOR CAJA DETALLE START
+        .ContCajaDetalle{
+            width: 500px;
+            padding: 20px 0px;
+            //background: rgba(8, 179, 37, 0.527);
+            
+            .conoscamos__tech{
+                color: $colorVerde;
+                font-size: 30px;
+            }
+            .conoscamos__desc{
+                color: $colorCelesteOscuro;
+                .titleP{
+                    color: $colorVerde;
+                }
+            }
+            .pieTexto{
+                color: $colorCelesteOscuro;
+            }
+            .VerProyecto{    //es el boton
+                margin-top: 20px;
+                width: 200px;
+                height: 35px;
+                background:$colorAzulTransparente;;
+                color: $colorCelesteOscuro;
+                position: relative;
+                border: 2px solid $colorVerde;
+                border-radius: 5px;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+                .icono{
+                    position: absolute;
+                    z-index: 2;
+                    left: 0;
+                    //background: floralwhite;
+                    width: 20px;
+                    height: 20px;
+                    transition: .3s ease-in-out all;
+                    display: flex;
+                    align-items: center;
+                    opacity: 0;
+                    .bi-arrow-right{
+                        color: $colorVerde;
+                       
+                    }
+                }
+                .spahh{
+                    transition: .4s ease-in-out all;
+                    position: absolute;
+                    left: 30%;
+                    //background: firebrick;
+                    color: aliceblue;
+                }
+            } 
+            .VerProyecto:hover{
+                cursor: pointer;
+                .spahh{
+                    left: 20px;
+                }
+                .icono{
+                    left: 150px;
+                    opacity: 1;
+                }
+            }
+            /*
+            .VerProyecto:hover{
+                border: 2px solid $colorVerde;
+                .iconFlecha{
+                    transform: translateX(20px);
+                    opacity: 1;
+                    color: $colorVerde;
+                    font-size: 16px;
+                }   
+            }
+            */
+        }
+       
+
+        //CONTENEDOR CAJA DETALLE END
+
+        //CONTENEDOR CAJA FOTOS START
+        .ContCajaFotos{
+            width:500px;
+            height: 500px;
+            //padding: 25px 0px;
+            //background:rgba(255, 255, 255, 0.336) ;
+            position: relative;
+            //overflow: hidden; 
+            
+            
+             //CAJA 1////////////////////////////////
+            .cuadroFoto1{
+                width:200px;
+                height:240px;
+                border-radius: 10px;
+                background-image: url(../img/PLANTILLA1.jpg);
+                background-size: 100% 100%;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left:calc(50% - 75px);
+                animation: cuadroMovil linear 100s infinite;   //forwards
+                animation-delay: 4s;
+                .cuadroFoto1_opacity{
+                    width:200px;
+                    height:240px;
+                    background: rgba(14, 14, 14, 0.534);
+                    position: relative;
+                    .title{
+                        color: $colorCelesteOscuro;
+                        font-size: 15px;
+                        text-align: center;
+                        position: absolute;
+                        top: 25px;
+                        right: 45px;
+                        line-height: 15px;
+                    }
+                    .contIndicador{
+                        width: 20px;
+                        //background: blue;
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                        .iconIndicador{
+                            color: $colorVerde;
+                            font-size: 30px;
+                        }
+                        .iconIndicador:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .contRepositorios{
+                        width: 100%;
+                        padding: 20px 0px;
+                        background: rgba(0, 0, 0, 0.658);
+                        position: absolute;
+                        top: 150px;
+                        right: -100%;
+                        display: flex;
+                        flex-direction:row;
+                        justify-content: space-around;
+                        align-items: center;
+                        transition: .1s ease-in ;
+                        opacity: 0;
+                        .iconGit{
+                            font-size: 18px;
+                            color: $colorVerde; 
+                            .text{
+                                font-size: 15px;
+                                color: white;
+                            }
+                            .text:hover{
+                                cursor: pointer;
+                            }
+                        }
+
+                    }
+                    .contRepositoriosJS{
+                        right: 0;
+                        opacity: 1;
+                        background: $colorAzulTransparente;
+                    }
+                }
+            }
+            .cuadroFoto1:hover{
+                border:2px solid $colorBlanco;
+                box-shadow: 0px 0px 10px $colorVerde;
+                z-index: 2000;
+                .cuadroFoto1_opacity{
+                    background: transparent;
+                }
+            }
+            @keyframes cuadroMovil {
+               0%{
+                   transform: translateX(0px);
+               }
+               20%{
+                   transform: translateX(100px);
+               }
+                    
+            }
+            @media only screen and (max-width: 423px) {
+                @keyframes cuadroMovil {
+                    0%{
+                        transform: translateX(0px);
+                    }
+                    20%{
+                        transform: translateX(30px);
+                    }
+                         
+                 }
+            }
+
+
+
+             //CAJA 2////////////////////////////////
+            .cuadroFoto2{
+                width:200px;
+                height:240px;
+                border-radius: 10px;
+                background-image: url(../img/PLANTILLA2.jpg);
+                background-size: 100% 100%;
+                overflow: hidden;
+                position: absolute;
+                top:calc(50% - 100px);
+                right:0;
+                animation: cuadroMovil2 linear 60s infinite;   //forwards
+                .title{
+                    color: $colorCelesteOscuro;
+                    font-size: 15px;
+                    text-align: center;
+                    position: absolute;
+                    top: 15px;
+                    right: 45px;
+                    line-height: 15px;
+                }
+                .cuadroFoto2_opacity{
+                    width:200px;
+                    height:240px;
+                    background: rgba(14, 14, 14, 0.534);
+                    position: relative;
+                    .contIndicador2{
+                        width: 20px;
+                        //background: blue;
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                        .iconIndicador2{
+                            color: $colorVerde;
+                            font-size: 30px;
+                        }
+                        .iconIndicador2:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .contRepositorios2{
+                        width: 100%;
+                        padding: 20px 0px;
+                        background: rgba(0, 0, 0, 0.658);
+                        position: absolute;
+                        top: 150px;
+                        right: -100%;
+                        display: flex;
+                        flex-direction:row;
+                        justify-content: space-around;
+                        align-items: center;
+                        transition: .1s ease-in ;
+                        opacity: 0;
+                        .iconGit2{
+                            font-size: 18px;
+                            color: $colorVerde; 
+                            .text2{
+                                font-size: 15px;
+                                color: white;
+                            }
+                            .text2:hover{
+                                cursor: pointer;
+                            }
+                        }
+
+                    }
+                    .contRepositoriosJS{
+                        right: 0;
+                        opacity: 1;
+                        background: $colorAzulTransparente;
+                    }
+                }
+            }
+            .cuadroFoto2:hover{
+                border:2px solid $colorBlanco;
+                box-shadow: 0px 0px 10px $colorVerde;
+                z-index: 2000;
+                .cuadroFoto2_opacity{
+                    background: transparent;
+                }
+            }
+            @keyframes cuadroMovil2 {
+                0%{
+                    transform: translateY(0px);
+                }
+                20%{
+                    transform: translateY(100px);
+                }      
+            }
+            @media only screen and (max-width: 423px) {
+                @keyframes cuadroMovil2 {
+                    0%{
+                        transform: translateY(0px);
+                    }
+                    20%{
+                        transform: translateY(50px);
+                    }      
+                }
+            }
+            
+
+
+
+             //CAJA 3////////////////////////////////
+            .cuadroFoto3{
+                width:200px;
+                height:240px;
+                border-radius: 10px;
+                background-image: url(../img/PLANTILLA3.jfif);
+                background-size: 100% 100%;  
+                position: absolute;
+                bottom:0px;
+                left:calc(50% - 75px);
+                animation: cuadroMovil3 linear 60s infinite;   //forwards
+                animation-delay: 4s;
+                overflow: hidden;
+                .title{
+                    color: $colorCelesteOscuro;
+                    font-size: 15px;
+                    text-align: center;
+                    position: absolute;
+                    top: 15px;
+                    right: 45px;
+                    line-height: 15px;
+                }
+                .cuadroFoto3_opacity{
+                    width:200px;
+                    height:240px;
+                    background: rgba(14, 14, 14, 0.534);
+                    position: relative;
+                    .contIndicador3{
+                        width: 20px;
+                        //background: blue;
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                        .iconIndicador3{
+                            color: $colorVerde;
+                            font-size: 30px;
+                        }
+                        .iconIndicador3:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .contRepositorios3{
+                        width: 100%;
+                        padding: 20px 0px;
+                        background: rgba(0, 0, 0, 0.658);
+                        position: absolute;
+                        top: 150px;
+                        right: -100%;
+                        display: flex;
+                        flex-direction:row;
+                        justify-content: space-around;
+                        align-items: center;
+                        transition: .1s ease-in ;
+                        opacity: 0;
+                        .iconGit3{
+                            font-size: 18px;
+                            color: $colorVerde; 
+                            .text3{
+                                font-size: 15px;
+                                color: white;
+                            }
+                            .text3:hover{
+                                cursor: pointer;
+                            }
+                        }
+
+                    }
+                    .contRepositoriosJS{
+                        right: 0;
+                        opacity: 1;
+                        background: $colorAzulTransparente;
+                    }
+                }
+            }
+            .cuadroFoto3:hover{
+                border:2px solid $colorBlanco;
+                box-shadow: 0px 0px 10px $colorVerde;
+                z-index: 2000;
+                .cuadroFoto3_opacity{
+                    background: transparent;
+                }
+            }
+            @keyframes cuadroMovil3 {
+                0%{
+                    transform: translateX(0px);
+                }
+                20%{
+                    transform: translateX(-100px);
+                }
+                     
+             }
+             @media only screen and (max-width: 423px) {
+                @keyframes cuadroMovil3 {
+                    0%{
+                        transform: translateX(0px);
+                    }
+                    20%{
+                        transform: translateX(-30px);
+                    }
+                         
+                 }
+             }
+
+
+
+             //CAJA 4////////////////////////////////
+             
+            .cuadroFoto4{
+                
+                width:200px;
+                height:240px;
+                border-radius: 10px;
+                background-image: url(../img/PLANTILLA4.jfif);
+                background-size: 100% 100%;
+                overflow: hidden;
+                position: absolute;
+                left:0;
+                bottom:calc(50% - 100px);
+                animation: cuadroMovil4 linear 60s infinite;   //forwards
+                .title{
+                    color: $colorCelesteOscuro;
+                    font-size: 15px;
+                    text-align: center;
+                    position: absolute;
+                    top: 15px;
+                    right: 45px;
+                    line-height: 15px;
+                }
+                .cuadroFoto4_opacity{
+                    width:200px;
+                    height:240px;
+                    background: rgba(14, 14, 14, 0.534);
+                    position: relative;
+                    .contIndicador4{
+                        width: 20px;
+                        //background: blue;
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                        .iconIndicador4{
+                            color: $colorVerde;
+                            font-size: 30px;
+                        }
+                        .iconIndicador4:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .contRepositorios4{
+                        width: 100%;
+                        padding: 20px 0px;
+                        background: rgba(0, 0, 0, 0.658);
+                        position: absolute;
+                        top: 150px;
+                        right: -100%;
+                        display: flex;
+                        flex-direction:row;
+                        justify-content: space-around;
+                        align-items: center;
+                        transition: .1s ease-in ;
+                        opacity: 0;
+                        .iconGit4{
+                            font-size: 18px;
+                            color: $colorVerde; 
+                            .text4{
+                                font-size: 15px;
+                                color: white;
+                            }
+                            .text4:hover{
+                                cursor: pointer;
+                            }
+                        }
+
+                    }
+                    .contRepositoriosJS{
+                        right: 0;
+                        opacity: 1;
+                        background: $colorAzulTransparente;
+                    }
+                }
+            }
+            .cuadroFoto4:hover{
+                border:2px solid $colorBlanco;
+                box-shadow: 0px 0px 10px $colorVerde;
+                z-index: 2000;
+                .cuadroFoto4_opacity{
+                    background: transparent;
+                }
+            }
+            @keyframes cuadroMovil4 {
+                0%{
+                    transform: translateY(0px);
+                }
+                20%{
+                    transform: translateY(-100px);
+                }
+                     
+            }
+            @media only screen and (max-width: 423px) {
+                @keyframes cuadroMovil4 {
+                    0%{
+                        transform: translateY(0px);
+                    }
+                    20%{
+                        transform: translateY(-50px);
+                    }
+                         
+                }
+             }
+        }
+          //CONTENEDOR CAJA FOTOS END
+    }
+
+   
+    @media (min-width:770px) and (max-width:1024px){
+        .contPrincipalCajas{
+            //background: rgb(128, 68, 0);
+            .ContCajaDetalle{
+                width: 100%;
+                height: 500px;
+                padding: 10px 20px;
+                //background: gold;
+                .VerProyecto{
+                    bottom: 40px;
+                    right: 20px;
+                    margin-top: 60px;
+                    margin-left: 20px;
+                }
+            }
+            .ContCajaFotos{
+                width: calc(80% - 20px);
+                //background: salmon;
+         
+            }
+        }
+    }
+
+    @media (min-width:641px) and (max-width:769px){
+        .contPrincipalCajas{
+            //background: rgb(32, 139, 28);
+            .ContCajaDetalle{
+                width: 100%;
+                height: 500px;
+                padding: 10px 20px;
+                //background: greenyellow;
+                .VerProyecto{
+                    
+                    
+                }
+            }
+            .ContCajaFotos{
+                //background: firebrick;
+                width: 100%;
+         
+            }
+        }
+    }
+
+    @media (min-width:481px) and (max-width:640px){
+        .contPrincipalCajas{
+            //background: rgb(32, 139, 28);
+            .ContCajaDetalle{
+                width: 100%;
+                height: 600px;
+                padding: 10px 20px;
+                //background: greenyellow;
+                .VerProyecto{
+                    
+                }
+            }
+            .ContCajaFotos{
+                //background: firebrick;
+                width: 100%;
+         
+            }
+        }
+    }
+
+    @media (min-width:20px) and (max-width:480px){
+        .contPrincipalCajas{
+            //background: rgb(32, 139, 28);
+            .ContCajaDetalle{
+                width: 400px;
+                height: 850px;
+                padding: 10px 20px;
+                line-height: 30px;
+                //background: greenyellow;
+                .conoscamos__tech{
+                    text-align: center;
+                }
+                .VerProyecto{
+                    width: 90%;
+                    margin-left: 10px;
+                    
+                }
+                .VerProyecto:hover{
+                    .icono{
+                        margin-left:calc(50% - 50px);
+                    }
+                }
+            }
+            .ContCajaFotos{
+                margin-top: 30px;
+                //background: firebrick;
+                width: 100%;
+         
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,229 @@
+@import "variables";
+.contContact{
+   width: 100%;
+   padding: 25px 0px;
+   background: $colorAzul;
+   //background: yellowgreen;
+   .title{
+      margin-top: 50px;
+      text-align: center;
+      font-size: 50px;
+      color: $colorVerde;
+      line-height: 50px;
+   }
+   .contDatosPersonales{
+      width: 100%;
+      padding: 0px 20px;
+      margin-top: 20px;
+      //background: grey;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .contCampos{
+         width: 45%;
+         padding: 5px 0px;
+         //background: $colorRojo;
+         .contCamposTitle{
+            color:$colorCelesteOscuro ;
+         }
+         .campoNombre{
+            width: 100%;
+            margin: 10px 0px;
+            .input{
+               width: 100%;
+               border: 1px solid $colorVerde;
+               border-radius: 5px;
+               text-align: center;
+               padding: 5px 0px;
+               outline: 1.5px solid $colorVerde;
+            }
+         }
+         .campoCorreo{
+            width: 100%;
+            margin: 10px 0px;
+            .input{
+               width: 100%;
+               border: 1px solid $colorVerde;
+               border-radius: 5px;
+               text-align: center;
+               padding: 5px 0px;
+               outline: 1.5px solid $colorVerde;
+
+            }
+         }
+         .campoCelular{
+            width: 100%;
+            margin: 10px 0px;
+            .input{
+               width: 100%;
+               border: 1px solid $colorVerde;
+               border-radius: 5px;
+               text-align: center;
+               padding: 5px 0px;
+               outline: 1.5px solid $colorVerde;
+
+            }
+         }
+      }
+      .campoTextarea{
+         width: 45%;
+         padding: 5px 0px;
+         //background: yellow;
+         .campoTextareaTitle{
+            color: $colorCelesteOscuro;
+         }
+         textarea{
+            margin: 10px auto;
+            width: 100%;
+            height: 124px;
+            border-radius: 5px;
+            border:1px solid $colorVerde;
+            max-width:100%;
+            min-width:100%;
+            min-height: 125px;
+            max-height:125px;
+            resize: none;
+            outline:1.5px solid $colorVerde
+         }  
+      }
+   }
+   .btnEnviar{
+      width:90%;
+      padding: 5px 10px;
+      background:$colorAzulTransparente;
+      border: 2px solid $colorVerde;
+      border-radius: 10px;
+      color: white;
+      position: relative;
+      left: 55px;
+      transition: 0.2s all;
+   }
+   .btnEnviar:hover{
+      background:rgba(255, 255, 255, 0.089);
+      color: white;
+      border: 2px solid $colorVerde;
+      cursor: pointer;
+   }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:720px) {
+   .contContact{
+      width: 100%;
+      padding: 25px 0px;
+      background: $colorAzul;
+      .title{
+         margin-top: 50px;
+         text-align: center;
+         font-size: $FuenteTipoDos;
+         color: $colorVerde;
+         line-height: 50px;
+      }
+      .contDatosPersonales{
+         width: 100%;
+         padding: 0px 10px;
+         margin-top: 20px;
+         //background: grey;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         .contCampos{
+            width: 100%;
+            padding: 5px 0px;
+            //background: $colorRojo;
+            .contCamposTitle{
+               color:$colorCelesteOscuro ;
+            }
+            .campoNombre{
+               width: 100%;
+               margin: 10px 0px;
+             
+               .input{
+                  width: 100%;
+                  //border: 2px solid $colorRojo;
+                  border-radius: 3px;
+                  text-align: center;
+                  padding: 5px 0px;
+                  outline: solid $colorVerde;
+               }
+            }
+            .campoCorreo{
+               width: 100%;
+               margin: 10px 0px;
+               .input{
+                  width: 100%;
+                  //border: 2px solid $colorRojo;
+                  border-radius: 3px;
+                  text-align: center;
+                  padding: 5px 0px;
+                  outline: solid $colorVerde;
+
+               }
+            }
+            .campoCelular{
+               width: 100%;
+               margin: 10px 0px;
+               .input{
+                  width: 100%;
+                  //border: 2px solid $colorRojo;
+                  border-radius: 3px;
+                  text-align: center;
+                  padding: 5px 0px;
+                  outline: solid $colorVerde;
+
+               }
+            }
+         }
+         .campoTextarea{
+            width: 100%;
+            padding: 5px 0px;
+            //background: yellow;
+            .campoTextareaTitle{
+               color:$colorCelesteOscuro
+            }
+            textarea{
+               margin: 10px auto;
+               width: 100%;
+               height: 124px;
+               border-radius: 3px;
+               //border:2px solid $colorRojo;
+               max-width:100%;
+               min-width:100%;
+               min-height: 125px;
+               max-height:125px;
+               resize: none;
+               outline: solid $colorVerde;
+            } 
+         }
+      }
+      .btnEnviar{
+         width:100%;
+         padding: 5px 10px;
+         background: $colorAzul;
+         border: 2px solid $colorVerde;
+         border-radius: 5px;
+         color: white;
+         position: relative;
+         left: 0px;
+         transition: 0.2s all;
+      }
+      .btnEnviar:hover{
+         background:rgba(255, 255, 255, 0.219);
+         color: white;
+         border: 2px solid $colorVerde;
+         cursor: pointer;
+      }
+   }
+   
+}
+
+
