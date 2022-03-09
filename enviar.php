@@ -100,7 +100,8 @@ $mensaje .= "Telefono de contacto: " . $telefono . " \r\n";
 $mensaje .= "Mensaje: " . $_POST['comentario'] . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'contacto@antomdeveloper.com';
+//$para = 'contacto@antomdeveloper.com';
+$para = 'digitizingaps@gmail.com';
 $asunto = 'Mensaje de mi sitio web';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);

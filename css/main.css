@@ -682,41 +682,17 @@ html {
   background: rgba(14, 14, 14, 0.534);
   position: relative;
 }
-.contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto1 .cuadroFoto1_opacity .title {
-  color: #96aadb;
-  font-size: 15px;
-  text-align: center;
-  position: absolute;
-  top: 25px;
-  right: 45px;
-  line-height: 15px;
-}
-.contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto1 .cuadroFoto1_opacity .contIndicador {
-  width: 20px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-.contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto1 .cuadroFoto1_opacity .contIndicador .iconIndicador {
-  color: #56fbd3;
-  font-size: 30px;
-}
-.contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto1 .cuadroFoto1_opacity .contIndicador .iconIndicador:hover {
-  cursor: pointer;
-}
 .contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto1 .cuadroFoto1_opacity .contRepositorios {
   width: 100%;
   padding: 20px 0px;
   background: rgba(0, 0, 0, 0.658);
   position: absolute;
   top: 150px;
-  right: -100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   transition: 0.1s ease-in;
-  opacity: 0;
 }
 .contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto1 .cuadroFoto1_opacity .contRepositorios .iconGit {
   font-size: 18px;
@@ -772,15 +748,6 @@ html {
   right: 0;
   animation: cuadroMovil2 linear 60s infinite;
 }
-.contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto2 .title {
-  color: #96aadb;
-  font-size: 15px;
-  text-align: center;
-  position: absolute;
-  top: 15px;
-  right: 45px;
-  line-height: 15px;
-}
 .contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto2 .cuadroFoto2_opacity {
   width: 200px;
   height: 240px;
@@ -806,13 +773,11 @@ html {
   background: rgba(0, 0, 0, 0.658);
   position: absolute;
   top: 150px;
-  right: -100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   transition: 0.1s ease-in;
-  opacity: 0;
 }
 .contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto2 .cuadroFoto2_opacity .contRepositorios2 .iconGit2 {
   font-size: 18px;
@@ -860,7 +825,7 @@ html {
   width: 200px;
   height: 240px;
   border-radius: 10px;
-  background-image: url(../img/PLANTILLA3.jfif);
+  background-image: url(../img/PLANTILLA4.jfif);
   background-size: 100% 100%;
   position: absolute;
   bottom: 0px;
@@ -868,15 +833,6 @@ html {
   animation: cuadroMovil3 linear 60s infinite;
   animation-delay: 4s;
   overflow: hidden;
-}
-.contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto3 .title {
-  color: #96aadb;
-  font-size: 15px;
-  text-align: center;
-  position: absolute;
-  top: 15px;
-  right: 45px;
-  line-height: 15px;
 }
 .contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto3 .cuadroFoto3_opacity {
   width: 200px;
@@ -903,13 +859,11 @@ html {
   background: rgba(0, 0, 0, 0.658);
   position: absolute;
   top: 150px;
-  right: -100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   transition: 0.1s ease-in;
-  opacity: 0;
 }
 .contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto3 .cuadroFoto3_opacity .contRepositorios3 .iconGit3 {
   font-size: 18px;
@@ -957,22 +911,13 @@ html {
   width: 200px;
   height: 240px;
   border-radius: 10px;
-  background-image: url(../img/PLANTILLA4.jfif);
+  background-image: url(../img/PLANTILLA3.jpg);
   background-size: 100% 100%;
   overflow: hidden;
   position: absolute;
   left: 0;
   bottom: calc(50% - 100px);
   animation: cuadroMovil4 linear 60s infinite;
-}
-.contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto4 .title {
-  color: #96aadb;
-  font-size: 15px;
-  text-align: center;
-  position: absolute;
-  top: 15px;
-  right: 45px;
-  line-height: 15px;
 }
 .contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto4 .cuadroFoto4_opacity {
   width: 200px;
@@ -999,13 +944,11 @@ html {
   background: rgba(0, 0, 0, 0.658);
   position: absolute;
   top: 150px;
-  right: -100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   transition: 0.1s ease-in;
-  opacity: 0;
 }
 .contCuadrosBase .contPrincipalCajas .ContCajaFotos .cuadroFoto4 .cuadroFoto4_opacity .contRepositorios4 .iconGit4 {
   font-size: 18px;
